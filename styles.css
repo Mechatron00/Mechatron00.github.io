@@ -1,0 +1,123 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Notable:wght@300&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap"); /* google font import */
+body {
+  background: url(./images/clouds-49520_1920.jpg);
+  background-size: cover;
+
+  background-repeat: no-repeat;
+}
+/* input */
+.section1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 5px;
+  align-items: center;
+  background: url(./images/clouds-49520_1920.jpg);
+  background-size: cover;
+  height: 150px;
+  background-position: center;
+  box-shadow: 5px 5px 5px black;
+  font-family: "Kanit", sans-serif;
+}
+.cityinput {
+  border: 1px;
+  box-shadow: 5px 5px 8px black;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: transparent;
+  text-align: center;
+  font-size: 27px;
+  color: white;
+  text-decoration: solid;
+
+  /* font-weight: 800; */
+  font-family: "Kanit", sans-serif;
+}
+.cityinput:hover {
+  border: 1px solid;
+}
+.butn {
+  border-radius: 5px;
+  padding: 8px 10px;
+  box-shadow: 1px 1px 1px black;
+  background-color: transparent;
+  font-family: "Kanit", sans-serif;
+}
+.butn:hover {
+  background-color: #008000;
+  color: white;
+}
+
+/* output */
+.section2 {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Kanit", sans-serif;
+}
+.inner-sec {
+  border: 1px;
+  box-shadow: 5px 5px 7px black;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: #f5f5f5;
+
+  width: 232px;
+}
+.heading {
+  text-align: center;
+  font-size: larger;
+  font-weight: 600;
+  color: #008000;
+}
+.foot {
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    
+    height: 40px;
+    background: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+
+   
+}
+.link
+{
+    color: rgb(0, 0, 0);
+    background-color: white;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+.link:hover
+{
+    background-color: gray;
+}
+
+/* //responsive  web*/
+@media screen and (max-width:1080px) {
+  body {
+    background-size: auto;
+  }
+
+  .cityinput {
+    color: black;
+    font-weight: 900;
+    font-size: medium;
+  }
+}
+
+
+/* Created by:Dinesh Dixit
+  Githubhttps://github.com/Mechatron00
+
+
+
+*/

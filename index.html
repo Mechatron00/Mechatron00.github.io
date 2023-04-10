@@ -1,13 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects
-    </title>
-</head>
-<body>
-    Hello.
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherApp</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="section1">
+      <div>
+        <input
+          class="cityinput"
+          type="text"
+          id="inp"
+          placeholder="Enter city..."
+          required
+          minlength="3"
+        />
+      </div>
+      <div>
+        <input class="butn" type="submit" value="Get Weather" id="btn" />
+      </div>
+
+      <!-- <button placeholder="submit" id="btn">submit</button> -->
+    </section>
+    <section class="section2">
+      <section class="inner-sec">
+        <div class="heading">Weather Data</div>
+        <div id="country"></div>
+        <div id="city"></div>
+        <div id="descri"></div>
+        <div id="temper"></div>
+
+        <div id="tmin"></div>
+        <div id="tmax"></div>
+        <div id="pressr"></div>
+        <div id="humidt"></div>
+        <div id="windspd"></div>
+      </section>
+    </section>
+    <footer class="foot">
+      <div>
+        Created by:Dinesh Dixit
+      </div>
+      <div>
+        <a class="link" href="https://github.com/Mechatron00">Github</a>
+      </div>
+      <div>
+        Still working for better experience...
+      </div>
+  </footer>
+  </body>
+  <script src="./script.js"></script>
 </html>
+<!-- Created by:Dinesh Dixit
+  Githubhttps://github.com/Mechatron00
+ -->
