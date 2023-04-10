@@ -11,7 +11,7 @@ var humidt=document.querySelector("#humidt");
 var windspd=document.querySelector("#windspd");
 const apikey="1c42635865be39a7e6e52078c9ffa124";
 
-//kelvin to celcius
+// kelvin to celcius
 function conversion(kelvin)
 {
   return (kelvin-273).toFixed(2)
@@ -24,11 +24,11 @@ function mpsTokmph(ms)
 }
 
 
-//event listner on button click
+// event listner on button click
 btn.addEventListener("click",function(){
   fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid='+apikey)//fetch and promise
   .then(res => res.json())
-     //.then(data=>console.log(data))//testing response from api
+    // .then(data=>console.log(data))//testing response from api
   .then(data=>
     {
       let countryname=data.sys.country
@@ -49,6 +49,7 @@ btn.addEventListener("click",function(){
       
       //  tmin.innerHTML=`Minimum Temp: ${conversion(mintemp)} <sup>o</sup>C.`
       //  tmax.innerHTML=`Maximum Temp: ${conversion(maxtemp)} <sup>o</sup>C.`
+
       pressr.innerHTML=`Pressure: ${press} hpa.`
       humidt.innerHTML=`Humidity: ${humid}%.`
       windspd.innerHTML=`Wind Speed: ${ mpsTokmph(wspeed)} Km/hr.`
